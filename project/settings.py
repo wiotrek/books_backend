@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
     'corsheaders'
 ]
 
@@ -61,7 +61,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
     'https://api-books-backend.herokuapp.com',
-    'https://wiotrek.github.io/ex_books_angular/'
+    'https://wiotrek.github.io'
 )
 
 ROOT_URLCONF = 'project.urls'
