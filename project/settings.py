@@ -21,7 +21,9 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'api-books-backend.herokuapp.com'
+    'api-books-backend.herokuapp.com',
+    'http://localhost:4200',
+    'https://wiotrek.github.io'
 ]
 
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'rest_framework.authtoken'
+    'corsheaders'
 ]
 
 REST_FRAMEWORK = {
@@ -54,6 +57,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:4200',
+    'https://api-books-backend.herokuapp.com',
+    'https://wiotrek.github.io/ex_books_angular/'
+)
 
 ROOT_URLCONF = 'project.urls'
 
