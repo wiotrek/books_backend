@@ -23,7 +23,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'api-books-backend.herokuapp.com',
     'http://localhost:4200',
-    'https://wiotrek.github.io'
+    'https://wiotrek.github.io',
 ]
 
 
@@ -61,7 +61,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
     'https://api-books-backend.herokuapp.com',
-    'https://wiotrek.github.io'
+    'https://wiotrek.github.io',
 )
 
 ROOT_URLCONF = 'project.urls'
