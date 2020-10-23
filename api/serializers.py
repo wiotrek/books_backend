@@ -29,7 +29,7 @@ class BookDetailsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Book
         fields = ['user', 'id', 'title', 'description', 'year',
-                  'rating', 'genre', 'amount_sites', 'when_addition',
+                  'rating', 'genre', 'amount_sites',
                   'author', 'GENRE']
 
 
@@ -39,5 +39,5 @@ class BookPostSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Book
         fields = ['user', 'id', 'title', 'description', 'year',
-                  'rating', 'genre', 'amount_sites', 'when_addition',
+                  'rating', 'genre', 'amount_sites',
                   'author']
