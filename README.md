@@ -4,7 +4,7 @@ API for https://wiotrek.github.io/ex_books_angular/
 # Frontend repository
 https://github.com/wiotrek/ex_books_angular
 
-#Heroku server
+# Heroku server
 https://api-books-backend.herokuapp.com/
 
 # Technologies
